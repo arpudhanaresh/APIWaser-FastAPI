@@ -17,3 +17,6 @@ app.add_middleware(
 def read_root():
     return 1
 
+@app.get("/test/{id}")
+def read_root(id):
+    return id
